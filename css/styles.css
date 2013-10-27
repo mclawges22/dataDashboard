@@ -1,0 +1,15 @@
+body {
+    padding: 30px 5%;
+    background-color: #054038;
+}
+
+/***trying to figure out how to edit the hover name in CSS***/
+#mapdiv svg #balloons {
+    background-color:#000;
+}
+#play {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: -4px 0 0 0;
+}
