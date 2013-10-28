@@ -3,7 +3,7 @@
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>amMap example</title>
+        <title>Visualizing worldwide Intenet growth</title>
         
         <link rel="stylesheet" href="css/ammap.css" type="text/css">
 	    <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -203,16 +203,44 @@
     </head>
     
     <body>
-	<h1>Visualizing Worldwide Internet Growth</h1>
+	<h1>Visualizing Internet Growth</h1>
+	<h4 id="subhead">The evolution of digital communication over the past 30 years has allowed billions of people to
+	    connect across previously unconquerable distances every day.
+	    Click &ldquo;play&rdquo; below the map on the left to watch the Internet spread across the world from 1990 to 2012. Lighter areas indicate higher Internet penetration rates (Internet users/country population) and notice the areas that are still dark today.
+	    Select a year to explore the data and timeline.</h4>
         <div id="mapdiv" style="width: 100%; background-color:#EEEEEE; height: 600px;"></div>
 	<br>
 	<button id="play">Play</button>
 	<div id="slider" style="margin-left: 50px; margin-right: 10px; margin-bottom:20px;"></div>
 	<div id="bottom">
+	    <div id="hide"><h4>x &nbsp;Hide Pie Graphs</h4></div>
 	    <div class="pie-chart" id="left-1990">
-		<h2>In <strong>1990</strong> there were about</h2>
-		<h4><strong>2,818,000</strong> people using the Internet</h4>
+		<h2>Regional distribution of the Internet</h2>
+		<h4>About <strong>2,818,000</strong> people were<br>using the Internet in <strong>1990.</strong></h4>
+		
 		<div id="pie-chart-1990">
+		    
+		</div>
+	    </div>
+	    <div class="pie-chart" id="left-1995">
+		<h2>Regional distribution of the Internet</h2>
+		<h4>About <strong>39.6 million</strong> people were<br>using the Internet in <strong>1995.</strong></h4>
+		<div id="pie-chart-1995">
+		    
+		</div>
+	    </div>
+	    
+	    <div class="pie-chart" id="left-2000">
+		<h2>Regional distribution of the Internet</h2>
+		<h4>About <strong>361 million</strong> people were<br>using the Internet in <strong>2000.</strong></h4>
+		<div id="pie-chart-2000">
+		    
+		</div>
+	    </div>
+	    <div class="pie-chart" id="left-2010">
+		<h2>Regional distribution of the Internet</h2>
+		<h4>About <strong>1,967 million</strong> people were<br>using the Internet in <strong>2010.</strong></h4>
+		<div id="pie-chart-2010">
 		    
 		</div>
 	    </div>
@@ -220,21 +248,22 @@
 		<div id="year-buttons" >
 		    <h3 class="head"><strong>Select a Year</strong></h3>
 		    <h3 class="left current" id="y0" value="">1982</h3>
-		    <h3 class="left" id="y8" value="">2000</h3>
+		    <h3 class="left" id="y7" value="">1999</h3>
+		    
 		    <h3 class="left" id="y1" value="">1986</h3>
-		    <h3 class="left" id="y9" value="">2002</h3>
+		    <h3 class="left" id="y8" value="">2001</h3>
 		    <h3 class="left" id="y2" value="">1989</h3>
-		    <h3 class="left" id="y10" value="">2004</h3>
+		    <h3 class="left" id="y9" value="">2004</h3>
 		    <h3 class="left" id="y3" value="">1990</h3>
-		    <h3 class="left" id="y11" value="">2006</h3>
+		    <h3 class="left" id="y10" value="">2005</h3>
 		    
 		    <h3 class="left" id="y4" value="">1994</h3>
-		    <h3 class="left" id="y12" value="">2008</h3>
+		    <h3 class="left" id="y11" value="">2006</h3>
 		    <h3 class="left" id="y5" value="">1995</h3>
-		    <h3 class="left" id="y13" value="">2010</h3>
+		    <h3 class="left" id="y12" value="">2008</h3>
 		    <h3 class="left" id="y6" value="">1997</h3>
-		    <h3 class="left" id="y14" value="">2012</h3>
-		    <h3 class="left" id="y7" value="">1998</h3>
+		    <h3 class="left" id="y13" value="">2009</h3>
+		    <h3 class="head expand" id="expand-pies"><strong>View All<br>Pie Graphs</strong></h3>
 		    
 		    
 		</div>
@@ -292,47 +321,54 @@
 		    <h4>Important events from <strong>1997:</strong></h4>
 		    <li><p>Guinea, Mozambique, Madagascar and Rwanda gain satellite earth stations to transmit Internet to parts of Africa.</p></li>
 		    <li><p>The size of the World Wide Web is estimated at about 300 million web pages.</p></li>
+		    <li><p>Larry Page and Sergey Brin launch <a href="http://www.google.com">Google Search</a>, which is now the most used search engine handling three billion searches each day.</p></li>
 
 		</div>
 		<div class="timeline" id="timeline-7" >
 		    <h2>Evolution of the Internet</h2>
-		    <h4>Important events from <strong>1998:</strong></h4>
-		    <p>"The World Comes Online" becomes the first commercial dial-up Internet Service Provider (ISP).</p>
+		    <h4>Important events from <strong>1999:</strong></h4>
+		    <li><p>Apple incorporated Wi-Fi into its new iBook computers under the brand name AirPort. Many other computer companies followed suit, enabling people to access the Internet without a wired connection.</p></li>
 		</div>
 		<div class="timeline" id="timeline-8" >
 		    <h2>Evolution of the Internet</h2>
-		    <h4>Important events from <strong>2000:</strong></h4>
-		    <p>"The World Comes Online" becomes the first commercial dial-up Internet Service Provider (ISP).</p>
+		    <h4>Important events from <strong>2001:</strong></h4>
+		    <li><p>Jimmy Wales and Larry Sanger launch <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a>,
+		    a free online encyclopedia that is written collaboratively by the Internet public. The site now has 30 million
+		    articles in 287 languages.</p></li>
 		</div>
 		<div class="timeline" id="timeline-9" >
 		    <h2>Evolution of the Internet</h2>
-		    <h4>Important events from <strong>2002:</strong></h4>
-		    <p>"The World Comes Online" becomes the first commercial dial-up Internet Service Provider (ISP).</p>
+		    <h4>Important events from <strong>2004:</strong></h4>
+		    <li><p>Firefox 1.0 is released, starting a browser war with Internet Explorer.</p></li>
+		    <li><p>The <a href="http://www.facebook.com" target="_blank">Facebook</a> starts out as a social network for universities and was later opened up to anyone over 13 in 2006.</p></li>
+		
 		</div>
 		<div class="timeline" id="timeline-10" >
 		    <h2>Evolution of the Internet</h2>
-		    <h4>Important events from <strong>2004:</strong></h4>
-		    <li><p>Firefox 1.0 is released, starting a browser war with Internet Explorer.</p></li>
+		    <h4>Important events from <strong>2005:</strong></h4>
+		    <li><p><a href="http://en.wikipedia.org/wiki/Jesse_James_Garrett" target="_blank">Jesse James Garrett</a> coined the term, <a href="http://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">&ldquo;Ajax,&rdquo;</a> referring to technologies for creating web applications in which data
+			can be loaded in the background instead of reloading the page. This innovation sparked the development of jQuery and
+			other open source JavaScript libraries.</p></li>
+		    <li><p>The video-sharing website, <a href="http://www.youtube.com" target="_blank">YouTube</a>, launches, allowing people to upload videos from their daily lives and digitally experience other cultures and regions.</p></li>
 		</div>
 		<div class="timeline" id="timeline-11" >
 		    <h2>Evolution of the Internet</h2>
 		    <h4>Important events from <strong>2006:</strong></h4>
-		    <p>"The World Comes Online" becomes the first commercial dial-up Internet Service Provider (ISP).</p>
+		    <li><p><a href="http://www.twitter.com" target="_blank">Twitter</a> launches as a &ldquo;microblogging&rdquo; platform that enables users to communicate via 140-character &ldquo;tweets.&rdquo;
+		    By 2012 the site had 500 million registered users who posted 340 million tweets per day. It is known for rapidly disseminating breaking news and information.</p></li>
 		</div>
 		<div class="timeline" id="timeline-12" >
 		    <h2>Evolution of the Internet</h2>
 		    <h4>Important events from <strong>2008:</strong></h4>
-		    <p>"The World Comes Online" becomes the first commercial dial-up Internet Service Provider (ISP).</p>
+		    <li><p>Google launches its Chrome browser as a simple, fast and compatible browser alternative.</p></li>
+		    <li><p>Apple introduces the second generation iPhone at a much lower list price. The device could install third party applications over a Wi-Fi or cellular network without requiring a desktop computer.</p></li>
 		</div>
 		<div class="timeline" id="timeline-13" >
 		    <h2>Evolution of the Internet</h2>
-		    <h4>Important events from <strong>2010:</strong></h4>
-		    <p>"The World Comes Online" becomes the first commercial dial-up Internet Service Provider (ISP).</p>
-		</div>
-		<div class="timeline" id="timeline-14" >
-		    <h2>Evolution of the Internet</h2>
-		    <h4>Important events from <strong>2012:</strong></h4>
-		    <p>"The World Comes Online" becomes the first commercial dial-up Internet Service Provider (ISP).</p>
+		    <h4>Important events from <strong>2009:</strong></h4>
+		    <li><p>A crowdfunding platform called <a href="http://www.kickstarter.com" target="_blank">Kickstarter</a> allows entrepreneurs to pitch their projects via the Internet and receive funding from people around the world. The company&rsquo;s mission is to help bring
+		    creative projects to life. Since its launch, more than 5 million people have funded more than 50,000 creative
+		    projects.</p></li>
 		</div>
 	    </div>
 	</div>
@@ -342,7 +378,8 @@
 	    <a href="http://royal.pingdom.com/2010/10/22/incredible-growth-of-the-internet-since-2000/">The incredible growth of the Internet since 2000, Pingdom</a><br>
 	    <a href="http://www.zakon.org/robert/internet/timeline/">Internet Timeline, Robert Hobbes Zakon</a><br>
 	    <a href="http://www.worldmapper.org/display.php?selected=335">Internet users since 1990, World Mapper</a><br>
-	    <a href="http://www.itu.int/en/ITU-D/Statistics/Documents/statistics/2013/Individuals_Internet_2000-2012.xls">Percentage of Individuals Using the Internet 2000 - 2012, International Telecommunications Union (Geneva), June 2013</a>
+	    <a href="http://www.itu.int/en/ITU-D/Statistics/Documents/statistics/2013/Individuals_Internet_2000-2012.xls">Percentage of Individuals Using the Internet 2000 - 2012, International Telecommunications Union (Geneva), June 2013</a><br>
+	    <a href="http://www.wordstream.com/articles/internet-search-engines-history">Internet Search Engines History, Wordstream</a>
 	</div>
     </body>
 
