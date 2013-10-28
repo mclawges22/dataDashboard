@@ -25,7 +25,7 @@ body {
     background-color: #054038;
 }
 h1 {
-    font-family:Franklin-Thin;
+    font-family:Franklin-Thin, sans-serif;
     color:#fff;
     text-align:center;
     font-size:65px;
@@ -39,19 +39,19 @@ h1 {
     
 }
 p {
-    font-family:Franklin;
+    font-family:Franklin, sans-serif;
     padding-left: 4.5% ;
     text-indent: -4.5% ;
     line-height:1.2em;
 }
 p a {
-    font-family:Franklin-Bold;
+    font-family:Franklin-Bold, sans-serif;
     font-weight: 100;
     color:#000;
     text-decoration: none;
 }
 p strong {
-     font-family:Franklin-Bold;
+     font-family:Franklin-Bold, sans-serif;
     font-weight: 100;
 }
 
@@ -105,7 +105,7 @@ p strong {
 
 #year-buttons .left {
     width:49.7%;
-    font-family:Franklin-Thin;
+    font-family:Franklin-Thin, sans-serif;
     font-size:24px;
     float:left;
     border:1px solid #333;
@@ -139,7 +139,7 @@ p strong {
     padding:15px 0;
     margin:0;
     text-align: center;
-    font-family:Franklin-Thin;
+    font-family:Franklin-Thin, sans-serif;
 }
 #year-buttons .head:hover {
     background-color:#76c2a9;
@@ -177,7 +177,7 @@ p strong {
     border-radius: 5px;
 }
 h4, h2 {
-    font-family:Franklin-Thin;
+    font-family:Franklin-Thin, sans-serif;
     font-size:1.3em;
     text-align: center;
     font-weight:normal;
@@ -195,7 +195,7 @@ h2 {
 }
 h4 strong, h3 strong, h2 strong {
     font-weight: 200;
-    font-family: Franklin-Bold;
+    font-family: Franklin-Bold, sans-serif;
 }
 
 #pie-chart-1990, #pie-chart-1995, #pie-chart-2000, #pie-chart-2010 {
@@ -209,7 +209,7 @@ h4 strong, h3 strong, h2 strong {
     margin:570px 0 20px 0;
     height:100px;
     text-align:center;
-    font-family:Franklin;
+    font-family:Franklin, sans-serif;
     line-height:1.3em;
     color:#fff;
     padding-bottom:30px;

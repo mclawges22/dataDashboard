@@ -246,7 +246,7 @@ $(document).ready(function() {
 });
 
 function styleYear(id) {
-  for (var i=0; i<=15; i++) {
+  for (var i=0; i<=13; i++) {
     if ($("#y"+i).hasClass("current")) {
       $("#y"+i).removeClass("current");
     }
@@ -266,29 +266,26 @@ function changeActiveYear(slide) {
   else if (slide == 2) {
     styleYear(7);
   }
-  else if (slide == 3 || slide == 4) {
+  else if (slide == 3 || slide == 4 || slide == 5) {
     styleYear(8);
   }
-  else if (slide == 5) {
+  else if (slide == 6 || slide == 7) {
     styleYear(9);
   }
-  else if (slide == 6 || slide == 7) {
+  else if (slide == 8) {
     styleYear(10);
   }
-  else if (slide == 8) {
+  else if (slide == 9) {
     styleYear(11);
   }
-  else if (slide == 9) {
+  else if (slide == 10 || slide==11) {
     styleYear(12);
   }
-  else if (slide == 10 || slide == 11) {
+  else if (slide == 12 || slide == 13) {
     styleYear(13);
   }
-  else if (slide == 12 || slide == 13) {
-    styleYear(14);
-  }
   else if (slide == 14 || slide == 15) {
-    styleYear(15);
+    styleYear(13);
   }
 }
 
